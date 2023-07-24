@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To do list</title>
+</head>
+<body>
+    <div id="tasks-container">
+        <div id="tasks-header">
+            <h2>Salve a sua próxima tarefa</h2>
+            <form action="" id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que você vai fazer?">
+                <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+        </div>
+    </div>
+    <div id="tasks-list-container">
+        <h2>Estas são suas tarefas</h2>
+        <ul id="task-list">
+            <li class="task-box template hide">
+                <span id="task-title"></span> <!-- está sendo clonada-->
+                <span id="task-title"><i class="fa-solid fa-check done-btn"></i><i class="fa-solid fa-x remove-btn"></i></span>
+            </li>
+        </ul>
+    </div>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

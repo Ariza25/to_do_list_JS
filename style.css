@@ -1,0 +1,124 @@
+/* geral*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #e65763, #34073d);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#tasks-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i{
+    font-size: 20px;
+}
+/* task header*/
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+    box-sizing: border-box;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid #34073d;
+    background-color: aliceblue;
+    color: #34073d;
+    font-size: 20px;
+    width: 100%;
+    padding: 12px;
+}
+#add-task-form input:focus{
+    outline:none
+}
+
+#add-task-form input::placeholder{
+    color: #34073d;
+}
+
+#add-btn{
+    position: absolute;
+    background: aliceblue;
+    border: 1px solid #34073d;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 48px;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+#add-btn:hover{
+    background-color: #34073d;
+    color: aliceblue;
+}
+
+/* task container*/
+
+.task-box{
+    box-sizing: border-box;
+}
+#task-list{
+    list-style: none;
+    padding-left: 0;
+    width: 40%;
+    margin-left: 30%;
+    
+}
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #34073d;
+    background-color: aliceblue;
+    color: #34073d;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task-list i{
+    position: absolute;
+    top: 12px;
+    height: 30px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+.fa-check{
+    right: 30px;
+}
+.fa-check:hover{
+    color: #09e01b;
+}
+.fa-x{
+    font-size: 18px;
+    right: 0;
+}
+.fa-x:hover{
+    color:  #eb0927;
+}
+
+/* classes adicionas no JS*/
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: #34073d;
+    color: aliceblue;
+    text-decoration: line-through;
+}
